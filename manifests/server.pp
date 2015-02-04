@@ -57,8 +57,6 @@ class puppet::server (
   $stringify_facts    = false,
 ) inherits puppet::params {
 
-  $master = true
-
   include puppet
   include puppet::server::config
   if $manage_package {
